@@ -16,20 +16,24 @@ limitations under the License.
 
 :root {
    /* Modify these to change your theme colors: */
-   --primary: #09F;
-   --text: #888;
-   --background: #111;
+   --primary: #DDD;
+   --text: #999;
+   --background: #000;
    --background-elevated: #222;
+   /* --primary: #49F;
+   --text: #444;
+   --background: #111;
+   --background-elevated: #222; */
 
    /* These should be less important: */
    --background-hover: rgba(255, 255, 255, 0.1);
    --background-light: #AAA;
    --background-bright: #FFF;
 
-   --border-dim: #666;
+   --border-dim: #444;
    --border-bright: var(--primary);
 
-   --text-bright: #888;
+   --text-bright: #FFF;
    --text-special: var(--primary);
 
    --scrollbar-background: #000;
@@ -1748,6 +1752,7 @@ ts-jumper .p-jumper__help {
 .channel_prefs__muting_checkbox_label:not(.subtle_silver) {
     color: var(--text) !important;
 }
+
 /* message dialogs */
 .c-message__sender {
     color: var(--text);
@@ -1769,196 +1774,4 @@ ts-jumper .p-jumper__help {
 /* unread counter */
 .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name {
 	color: var(--primary) !important;
-}
-
-/* help modal */
-.p-help_modal__footer {
-    background-color: var(--background);
-}
-.p-help_modal__list__item:focus, .p-help_modal__list__item:hover, .p-help_modal__list__item__focus {
-    background: var(--background-hover);
-    border: 1px solid var(--border-dim);
-}
-
-/* App channel */
-.channel_header .channel_header__tabs .channel_header__tab.--active {
-    color: var(--text);
-}
-.channel_header .channel_header__tabs .channel_header__tab:hover {
-    color: var(--background-light);
-}.p-app_space {
-    background-color: var(--background-elevated);
-}
-.p-app_space_profile__info {
-    background-color: var(--background-elevated);
-}.p-app_space__header {
-    color: var(--text);
-}
-
-/* file upload */
-.p-multi_file_upload__container .p-galler_scroller__wrapper {
-    background: var(--background);
-}
-.c-pillow_file {
-    background: var(--background-elevated);
-}
-.c-dialog__footer .p-file_upload_dialog__footer_share_inputs {
-    color: var(--text);
-}
-
-/* option list */
-
-.c-select_options_list__wrapper {
-    background-color: var(--background-elevated);
-	border: 1px solid var(--border-dim);
-}
-.c-select_options_list__option {
-    color: var(--text);
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-    background: var(--scrollbar-background);
-}
-
-/** Slack 4 **/
-strong {
-    color: var(--text) !important;
-}
-.c-alert--boxed {
-    color: var(--text);
-}
-.c-multi_select_input {
-    background-color: var(--background-elevated);
-}
-.c-token {
-    background-color: var(--background);
-}
-.c-fullscreen_modal__content--with_footer .c-fullscreen_modal__footer {
-    background-color: var(--background);
-}
-
-.p-classic_nav {
-    background-color: var(--background);
-}
-
-.p-file_drag_drop__container {
-	background-color: var(--background);
-}
-
-.p-workspace__input .p-message_input_field {
-    background-color: var(--background);
-    border-color: var(--border-dim);
-}
-.p-classic_nav__model__title__info.p-classic_nav__no_drag {
-    color: var(--text);
-}
-.p-classic_nav__team_header {
-    background-color: var(--background-elevated);
-}
-.p-team_sidebar__icon--active, .p-team_sidebar__icon--active:hover {
-    box-shadow: 0 0 0 3px rgb(19,30,39), 0 0 0 6px var(--border-dim);
-}
-.c-menu_item__link_icon, .c-menu_item__shortcut {
-    color: var(--text-bright);
-}
-.p-classic_nav__model__title__info__topic--focus-within .p-classic_nav__model__title__info__topic__text:before, .p-classic_nav__model__title__info__topic:hover .p-classic_nav__model__title__info__topic__text:before {
-    background: var(--background-elevated);
-}
-
-/* sidebars default in general */
-.p-workspace--classic-nav .p-workspace__secondary_view {
-	background-color: var(--background);
-    border-color: var(--border-dim);
-}
-
-/* channel detail view */
-.p-channel_details_section.p-channel_details__channel_details_section {
-    background-color: var(--background-elevated);
-}
-.p-channel_details__heading {
-    color: inherit;
-}
-.p-channel_details__created_link, .p-channel_details__created_link:hover {
-	color: inherit;
-}
-.c-message_kit__pillow {
-    background-color: var(--background-elevated);
-}
-@keyframes fade-background-highlight 
-{ 
-	0% { background: var(--background-light); }
-  100% { background: transparent; } 
-}
-.p-highlights_section__group_title_line {
-    border-color: var(--border-dim);
-}
-.p-highlights_section__group_title_label {
-    background-color: var(--background-elevated);
-}
-.p-classic_nav__right__search__placeholder {
-    color: var(--text);
-}
-.p-pinned_items__empty_list .p-pinned_items__empty_list_action {
-    color: var(--text);
-}
-
-/* create channel */
-.p-channel_create_modal__label_title {
-    color: var(--text);
-}
-.p-channel_create_modal, .p-channel_create_modal__label_title, .p-channel_create_modal__private_toggle_copy_body, .p-channel_create_modal__private_toggle_copy_title, .p-channel_create_modal__share, .p-channel_name_input__label_title, .p-invite_users_input__label_title {
-	color: var(--text);
-}
-.p-channel_create_modal__input_subtext {
-    color: var(--text);
-}
-.p-invite_users_input__input_subtext {
-    color: var(--text);
-}
-.c-toggle__input {
-    background-color: var(--background-light);
-}
-
-/* workspace directory */
-.p-member_directory__member_row {
-    background-color: var(--background-elevated);
-    border-color: var(--border-dim);
-}
-.p-member_directory__member_row:focus, .p-member_directory__member_row:focus-within, .p-member_directory__member_row:hover {
-    background-color: var(--background-hover);
-}
-/* autocomplete lists */
-.c-texty_autocomplete {
-    background-color: var(--background-elevated);
-}
-.c-texty_autocomplete__result_highlight {
-    background-color: var(--background);
-}
-/* new post */
-.p-docs_header {
-    background-color: var(--background);
-}
-.meta-info-text {
-    color: var(--text);
-}
-
-.c-sk-modal {
-    background-color: var(--background);
-}
-.c-sk-modal_header {
-    background-color: var(--background);
-}
-.c-sk-modal_content {
-    background-color: var(--background);
-}
-.c-sk-modal_footer {
-    background-color: var(--background);
-}
-/* tooltips */
-.c-tooltip__tip {
-	color: var(--text);
-}
-.p-classic_nav__tip_shortcut, .p-classic_nav__tip_sub {
-	color: var(--text-bright);
 }
